@@ -33,6 +33,22 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Move
+-- Normal-mode commands
+local opts = { noremap = true, silent = true }
+vim.keymap.set('n', '<A-j>', '<cmd>MoveLine(1)<CR>', opts)
+vim.keymap.set('n', '<A-k>', '<cmd>MoveLine(-1)<CR>', opts)
+vim.keymap.set('n', '<A-h>', '<cmd>MoveHChar(-1)<CR>', opts)
+vim.keymap.set('n', '<A-l>', '<cmd>MoveHChar(1)<CR>', opts)
+vim.keymap.set('n', '<leader>wf', '<cmd>MoveWord(1)<CR>', opts)
+vim.keymap.set('n', '<leader>wb', '<cmd>MoveWord(-1)<CR>', opts)
+
+-- Visual-mode commands
+vim.keymap.set('v', '<A-j>', '<cmd>MoveBlock(1)<CR>', opts)
+vim.keymap.set('v', '<A-k>', '<cmd>MoveBlock(-1)<CR>', opts)
+vim.keymap.set('v', '<A-h>', '<cmd>MoveHBlock(-1)<CR>', opts)
+vim.keymap.set('v', '<A-l>', '<cmd>MoveHBlock(1)<CR>', opts)
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
