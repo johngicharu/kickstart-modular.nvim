@@ -5,5 +5,6 @@
 
 require 'custom.plugins.toggleterm'
 require 'custom.plugins.move'
+require 'custom.plugins.tailwind-tools'
 
 return {}
