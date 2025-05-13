@@ -2,4 +2,13 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
+
+vim.o.relativenumber = true
+vim.g.have_nerd_font = true
+
+
+require 'custom.plugins.toggleterm'
+require 'custom.plugins.move'
+require 'custom.plugins.tailwind-tools'
+
 return {}
