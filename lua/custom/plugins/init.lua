@@ -5,7 +5,9 @@
 
 vim.o.relativenumber = true
 vim.g.have_nerd_font = true
-
+vim.o.tabstop = 2
+vim.o.wrap = true
+vim.o.shiftwidth = 2
 
 require 'custom.plugins.toggleterm'
 require 'custom.plugins.move'
