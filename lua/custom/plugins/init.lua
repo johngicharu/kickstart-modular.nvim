@@ -12,5 +12,6 @@ vim.o.shiftwidth = 2
 require 'custom.plugins.toggleterm'
 require 'custom.plugins.move'
 require 'custom.plugins.tailwind-tools'
+require 'custom.plugins.theme'
 
 return {}
