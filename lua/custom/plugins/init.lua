@@ -13,5 +13,10 @@ require 'custom.plugins.toggleterm'
 require 'custom.plugins.move'
 require 'custom.plugins.tailwind-tools'
 require 'custom.plugins.theme'
+require 'custom.plugins.markdown'
+
+vim.lsp.enable 'marksman'
+
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic' })
 
 return {}
