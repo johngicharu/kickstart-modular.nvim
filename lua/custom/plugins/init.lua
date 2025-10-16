@@ -18,5 +18,7 @@ require 'custom.plugins.markdown'
 vim.lsp.enable 'marksman'
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic' })
+vim.keymap.set('n', '<bs>', '"_', { desc = 'Blackhole delete' })
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
 
 return {}
