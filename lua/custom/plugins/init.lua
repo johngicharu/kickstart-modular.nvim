@@ -14,6 +14,7 @@ require 'custom.plugins.move'
 require 'custom.plugins.tailwind-tools'
 require 'custom.plugins.theme'
 require 'custom.plugins.markdown'
+require 'custom.plugins.auto-dark-mode'
 
 vim.lsp.enable 'marksman'
 
