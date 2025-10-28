@@ -15,6 +15,7 @@ require 'custom.plugins.tailwind-tools'
 require 'custom.plugins.theme'
 require 'custom.plugins.markdown'
 require 'custom.plugins.auto-dark-mode'
+require 'custom.plugins.todo-comments'
 
 vim.lsp.enable 'marksman'
 
