@@ -3,6 +3,8 @@
 --
 -- See the kickstart.nvim README for more information
 
+---@module 'lazy'
+---@type LazySpec
 vim.o.relativenumber = true
 vim.g.have_nerd_font = true
 vim.o.tabstop = 2
