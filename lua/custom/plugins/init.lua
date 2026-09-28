@@ -12,3 +12,21 @@ for file_name, type in vim.fs.dir(plugins_dir, { follow = true }) do
     require('custom.plugins.' .. module)
   end
 end
+
+---@module 'lazy'
+---@type LazySpec
+vim.o.relativenumber = true
+vim.g.have_nerd_font = true
+vim.o.tabstop = 2
+vim.o.wrap = true
+vim.o.shiftwidth = 2
+
+vim.lsp.enable 'marksman'
+vim.lsp.config('tailwindcss', {})
+vim.lsp.enable 'tailwindcss'
+
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic' })
+vim.keymap.set('n', '<bs>', '"_', { desc = 'Blackhole delete' })
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
+
+return {}

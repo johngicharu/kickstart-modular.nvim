@@ -115,6 +115,11 @@ local servers = {
   -- rust_analyzer = {},
 
   stylua = {}, -- Used to format Lua code
+  -- Mine
+  gopls = {},
+  rust_analyzer = {},
+  postgres_lsp = {},
+  -- End Mine
 
   -- Special Lua Config, as recommended by neovim help docs
   lua_ls = {
