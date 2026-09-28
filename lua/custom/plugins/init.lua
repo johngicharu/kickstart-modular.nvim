@@ -13,13 +13,17 @@ vim.o.shiftwidth = 2
 
 require 'custom.plugins.toggleterm'
 require 'custom.plugins.move'
-require 'custom.plugins.tailwind-tools'
+-- require 'custom.plugins.tailwind-tools'
 require 'custom.plugins.theme'
 require 'custom.plugins.markdown'
 require 'custom.plugins.auto-dark-mode'
 require 'custom.plugins.todo-comments'
+require 'custom.plugins.fold'
+require 'custom.plugins.mql-compile'
 
 vim.lsp.enable 'marksman'
+vim.lsp.config('tailwindcss', {})
+vim.lsp.enable 'tailwindcss'
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic' })
 vim.keymap.set('n', '<bs>', '"_', { desc = 'Blackhole delete' })

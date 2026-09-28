@@ -122,7 +122,6 @@ return {
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
-        -- clangd = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
@@ -134,6 +133,9 @@ return {
         -- ts_ls = {},
 
         stylua = {}, -- Used to format Lua code
+        gopls = {},
+        rust_analyzer = {},
+        postgres_lsp = {},
 
         -- Special Lua Config, as recommended by neovim help docs
         lua_ls = {
